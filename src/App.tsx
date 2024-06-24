@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useRef, useState } from 'react';
+import { MouseEvent, ChangeEvent, useEffect, useRef, useState } from 'react';
 import './App.css';
 import Button from './components/Button';
 import Input from './components/Input';
@@ -28,7 +28,7 @@ function App() {
     setValues(nextValues);
   }
 
-  function handleClick(e: any) {
+  function handleClick(e: MouseEvent) {
     e.preventDefault();
 
     const message = `${values.username}님 환영합니다`;
